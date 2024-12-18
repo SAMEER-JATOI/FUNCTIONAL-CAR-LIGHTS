@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+button {
+   height: 40px;
+}
+.car {
+    height: 300px;
+    width: 700px;
+    margin-top: 200px;
+    background-image: url(./img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+}
+.headl {
+    height: 50px;
+    width: 10px;
+    background-color: rgb(56, 56, 56);
+    margin-left: -86px;
+    margin-top: 365px;
+}
+.taill {
+    height: 50px;
+    width: 10px;
+    background-color: rgb(56, 56, 56);
+    margin-left: -86px;
+    margin-top: 380px;
+}
+
+.blink {
+    animation-name: s;
+    animation-duration: 0.1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes s {
+    0% {
+        background-color: rgb(56, 56, 56);
+        box-shadow: 0 0 1px rgb(56, 56, 56);
+    }
+    100% {
+        background-color: yellow;
+        box-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow, 0 0 20px yellow;
+    }
+}
+
+.front {
+    background-color: yellow;
+    box-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow, 0 0 20px yellow;
+}
+
+.back {
+    background-color: red;
+    box-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red, 0 0 20px red;
+}
